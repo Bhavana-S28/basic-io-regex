@@ -1,94 +1,48 @@
-# basic-io-regex
+**Roles and Responsibilities**
+**1. Mohammad Ali Moradi**
 
-# Energy Management System
+Developed file I/O operations for log management.
+Implemented simulation of byte and character stream operations to handle log file content.
+Enhanced file management with functionalities to move and delete log files.
 
-This project is part of Home Assignment 1, focusing on building an Energy Management System with logging functionality for charging stations, energy sources, and the overall system.
+**Key Files:**
+IOexpression.java
+DataExchangeSimulator.java
 
-## Role Distribution
-- **Dörthe**: 
-  - Log creation (charging stations, energy sources, system-wide).
-  - Log searching functionality (by equipment name or date).
-  - File handling and regular expressions.
-  
-## How to Run the Project
-1. Clone the repository to your local machine.
-    ```bash
-    git clone https://github.com/yourusername/HA1-EnergyManagementSystem.git
-    ```
-2. Navigate to the project folder.
-    ```bash
-    cd HA1-EnergyManagementSystem
-    ```
-3. Compile and run the program using Java. Example command (adjust for your environment):
-    ```bash
-    javac src/IORegex/LogFileCreator.java
-    java src/IORegex/LogFileCreator
-    ```
-4. You can search for log files using the `LogFileSearcher` class by specifying a directory and query.
+**2.Bhavana Shivaraju**
 
----
+Implemented log file creation and metadata handling.
+Created a system to generate daily log files for charging stations and energy sources.
+Coded functionality to allow users to search log files by name or date using regular expressions.
 
-## Log File Generation
-Log files are created daily based on charging stations and energy sources. These files are stored in the `logs/` directory (or another specified directory).
+**Key Files:**
+LogFileCreator.java
+LogFileSearcher.java
 
-## Log Searching
-You can search for log files using:
-- Equipment name (e.g., "Station1")
-- Date in the format `yyyyMMdd` (e.g., "20241007")
+**3. Aftab Makbul Makandar**
 
-  # Data Exchange Simulator
+Provided additional examples for byte and character stream usage in log data exchange simulation.
+Reviewed and documented the differences between byte and character streams and their applications in the system.
+Worked on detailed file metadata handling and logging simulation.
 
-The **Data Exchange Simulator** is a simple Java program that demonstrates the use of byte streams and character streams for file handling. The program includes methods for writing binary data and textual data to files using Java's `FileOutputStream` and `FileWriter` classes.
+**Key Files:**
+DataExchangeSimulator.java (Enhanced version)
+LogMetaData.java
 
----
 
-## Features
+**Features**
+1.Log File Management:
+Automatic creation of log files for charging stations, energy sources, and the entire system.
+Log file organization by date and name.
 
-1. **Byte Stream Example**  
-   Writes a predefined array of bytes to a specified file.
-   
-2. **Character Stream Example**  
-   Writes a string to a specified file using character encoding.
+2.Search Functionality:
+Search for log files by name or date using regular expressions.
 
----
+3.Data Exchange Simulation:
+Simulated file content writing using byte and character streams.
 
-## Prerequisites
+4.File Operations:
+Move and delete log files using Java's NIO and I/O APIs.
 
-- **Java Development Kit (JDK):** Version 8 or above.
-- A text editor or IDE such as IntelliJ IDEA, Eclipse, or VS Code.
-
----
-
-# File Management Utilities
-
-This project contains Java classes for managing file operations and logging metadata. It demonstrates:
-
-- Writing binary and text data to files.
-- Creating, moving, and deleting files.
-- Managing file metadata such as name, path, and timestamps.
-
-## Classes Overview
-
-1. **DataExchangeSimulator**
-   - Handles byte and character stream file writing.
-   
-2. **IOexpression**
-   - Provides methods to create, move, and delete log files.
-
-3. **LogMetaData**
-   - Encapsulates metadata for log files, including timestamps, location, and file details.
-
-## Usage
-
-1. Clone the project and compile the Java files:
-   ```bash
-   javac -d . *.java
-Run the IOexpression main method to see file management in action.
-Example
-Here's how you can use DataExchangeSimulator in your code:
-
-java
-Copy code
-DataExchangeSimulator simulator = new DataExchangeSimulator();
-simulator.byteStreamExample("output.bin");
-simulator.characterStreamExample("output.txt", "Sample text content");
+5.Metadata Support:
+Log metadata creation, including file name, path, station ID, and energy source type.
