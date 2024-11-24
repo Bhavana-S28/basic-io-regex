@@ -1,20 +1,10 @@
-1. The project should create daily log files for:
-   - Each charging station
-   - Each energy source
-   - The whole system
+Requirements:
 
-2. Log file names should follow the pattern: <equipment_name>_<date>.log
-
-3. The user should be able to search for log files by:
-   - Equipment name
-   - Date (in the format `yyyyMMdd`)
-
-4. The project should include:
-   - Byte and character streams for simulating data exchange
-   - Metadata management for log files (create, move, delete, archive)
-
-5. The project should handle potential exceptions like file creation failure, input/output errors, and empty directories.
-
-6. The program should be structured with clear role distribution among team members.
-
-7. The project should be hosted on GitHub, with a well-documented README and a .gitignore file to avoid unnecessary files.
+1. Software Requirements:
+Java Development Kit (JDK) 11 or higher.
+IDE: IntelliJ IDEA, Eclipse, or similar.
+2. Libraries and Tools:
+No external dependencies. The project uses core Java libraries.
+3. System Requirements:
+Windows/macOS/Linux with at least 4GB RAM.
+Ensure the directory paths for log files are correctly configured.
